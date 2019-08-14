@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
         lightNode.light?.type = .omni
-        lightNode.position = SCNVector3(x: 0,y:10,z:2)
+        lightNode.position = SCNVector3(x: 10,y:0,z:2)
         scene.rootNode.addChildNode(lightNode)
         
         let starsNode = SCNParticleSystem(named: "SkitParticle.scnp", inDirectory: nil)!
